@@ -5,17 +5,17 @@
 ## 📦 安装
 
 ```bash
-  pnpm i worker-timer
+  pnpm i simple-worker-timer
 ```
 
 ## 🚗 用法
 
 ```ts
 <script setup lang="ts">
-import WorkerTimer from 'worker-timer'
+import SimpleWorkerTimer from 'simple-worker-timer'
 </script>
 
 <template>
-  <WorkerTimer />
+  <SimpleWorkerTimer />
 </template>
 ```

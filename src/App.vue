@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import WorkerTimer from './components/index'
+import SimpleWorkerTimer from './components/index'
 </script>
 
 <template>
-  <WorkerTimer />
+  <SimpleWorkerTimer />
 </template>

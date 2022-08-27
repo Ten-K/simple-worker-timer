@@ -1,5 +1,5 @@
 {
-  "name": "worker-timer",
+  "name": "simple-worker-timer",
   "version": "1.0.0",
   "sideEffects": false,
   "description": "一个基于web worker的翻牌计时器",

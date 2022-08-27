@@ -4,7 +4,7 @@ import { HTMLElementPlus } from '../types/index'
 import { ref, unref, nextTick, onUnmounted, defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'WorkerTimer',
+  name: 'SimpleWorkerTimer',
   setup() {
     const worker = ref<Worker | null>(null)
     const flipObjs = ref<(HTMLElementPlus | null)[]>([])
