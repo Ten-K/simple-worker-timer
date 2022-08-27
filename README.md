@@ -1,4 +1,4 @@
-# worker-timer
+# simple-worker-timer
 
 - 基于`vue3` 、`web worker`的翻牌计时器
 

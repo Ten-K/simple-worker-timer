@@ -11,15 +11,15 @@
     "vite",
     "tsx"
   ],
-  "homepage": "https://github.com/Ten-K/worker-timer/tree/main/#readme",
+  "homepage": "https://github.com/Ten-K/simple-worker-timer/tree/main/#readme",
   "bugs": {
-    "url": "https://github.com/Ten-K/worker-timer/issues"
+    "url": "https://github.com/Ten-K/simple-worker-timer/issues"
   },
   "license": "MIT",
   "author": "Ten-K",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ten-K/worker-timer"
+    "url": "https://github.com/Ten-K/simple-worker-timer"
   },
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
