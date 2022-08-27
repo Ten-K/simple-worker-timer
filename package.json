@@ -1,7 +1,39 @@
 {
   "name": "worker-timer",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "description": "一个基于web worker的翻牌计时器",
+  "keywords": [
+    "worker",
+    "timer",
+    "typescript",
+    "vue3",
+    "vite",
+    "tsx"
+  ],
+  "homepage": "https://github.com/Ten-K/worker-timer/tree/main/#readme",
+  "bugs": {
+    "url": "https://github.com/Ten-K/worker-timer/issues"
+  },
+  "license": "MIT",
+  "author": "Ten-K",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ten-K/worker-timer"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.umd.js",
+      "import": "./dist/index.es.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "web-norm": "web-norm",
@@ -17,26 +49,28 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "@commitlint/cz-commitlint": "^17.0.3",
+    "@typescript-eslint/parser": "^5.30.7",
     "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.7.1",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vue-tsc": "^0.39.5",
-    "web-norm": "^1.0.24",
-    "eslint": "^7.25.0",
-    "prettier": "^2.7.1",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-html": "^6.2.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-vue": "^9.2.0",
-    "@typescript-eslint/parser": "^5.30.7",
-    "husky": "^8.0.1",
-    "lint-staged": "^12.4.1",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-angular": "^17.0.3",
-    "commitizen": "^4.2.4",
-    "cz-customizable": "^6.9.0",
-    "@commitlint/cz-commitlint": "^17.0.3"
+    "web-norm": "^1.0.24"
   },
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
