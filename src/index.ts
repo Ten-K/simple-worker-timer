@@ -1,11 +1,11 @@
 import type { App } from 'vue'
-import workerTimer from './components/index'
+import simpleWorkerTimer from './components/index'
 
 /** 时间翻牌组件 */
-export const WorkerTimer = Object.assign(workerTimer, {
+export const SimpleWorkerTimer = Object.assign(simpleWorkerTimer, {
   install: (app: App) => {
-    app.component(workerTimer.name, workerTimer)
+    app.component(simpleWorkerTimer.name, simpleWorkerTimer)
   }
 })
 
-export default WorkerTimer
+export default SimpleWorkerTimer

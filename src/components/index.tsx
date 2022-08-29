@@ -1,7 +1,10 @@
 import Flippers from './filpper'
+import MyWork from '../worker?worker'
 import { formatDate } from '../utils/index'
 import { HTMLElementPlus } from '../types/index'
 import { ref, unref, nextTick, onUnmounted, defineComponent } from 'vue'
+
+import './index.css'
 
 export default defineComponent({
   name: 'SimpleWorkerTimer',
@@ -28,7 +31,7 @@ export default defineComponent({
     // 开始计时
     const run = () => {
       if (!window.Worker) return
-      worker.value = new Worker('/src/worker.ts')
+      worker.value = new MyWork()
       worker.value.postMessage('')
       worker.value.onmessage = (e) => {
         const { nowTimeStr, nextTimeStr } = e.data
