@@ -2,14 +2,14 @@ lockfileVersion: 5.3
 
 specifiers:
   '@vitejs/plugin-vue': ^3.0.3
-  simple-worker-timer: ^1.0.3
+  simple-worker-timer: ^1.0.4
   typescript: ^4.6.4
   vite: ^3.0.7
   vue: ^3.2.37
   vue-tsc: ^0.39.5
 
 dependencies:
-  simple-worker-timer: 1.0.3
+  simple-worker-timer: 1.0.4
   vue: 3.2.37
 
 devDependencies:
@@ -463,8 +463,8 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /simple-worker-timer/1.0.3:
-    resolution: {integrity: sha512-6Lg8fBww1FqcKKtmOv5JcGd3ixE2DEQ5gBukXNedwNGJpag+Vj5FL34WXJdUQ941y07LHdjT22Mt2UrEXm8fKA==}
+  /simple-worker-timer/1.0.4:
+    resolution: {integrity: sha512-sc1tpUX67/0fRaJyINYFVr96T4b1tVUtYCUaBHqe9xOJ3iWspLZSlPxiWEPMVq329XO8Nqu0tIX8jUY8Au3Urg==}
     dependencies:
       vue: 3.2.37
     dev: false

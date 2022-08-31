@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "simple-worker-timer": "^1.0.3",
+    "simple-worker-timer": "^1.0.4",
     "vue": "^3.2.37"
   },
   "devDependencies": {
