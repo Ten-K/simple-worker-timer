@@ -1,4 +1,6 @@
-// 正则格式化日期
+/** 为什么不用utils导入的原因: https://github.com/vitejs/vite/issues/9882 */
+
+/** 正则格式化日期 */
 const formatDate = (date: Date, dateFormat: string) => {
   /* 单独格式化年份，根据y的字符数量输出年份
      * 例如：yyyy => 2019
@@ -33,7 +35,7 @@ const formatDate = (date: Date, dateFormat: string) => {
   return dateFormat
 }
 
-// 日期时间补零
+/** 日期时间补零 */
 const padLeftZero = (str: string | any[]) => {
   return ('00' + str).substr(str.length)
 }

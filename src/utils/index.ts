@@ -1,16 +1,16 @@
 import { IDate } from '../types/index'
 
-// 正则格式化日期
+/** 正则格式化日期 */
 export const formatDate = (date: Date, dateFormat: string) => {
   /* 单独格式化年份，根据y的字符数量输出年份
-     * 例如：yyyy => 2019
-            yy => 19
-            y => 9
-     */
+    * 例如：yyyy => 2019
+          yy => 19
+          y => 9
+    */
   if (/(y+)/.test(dateFormat)) {
     dateFormat = dateFormat.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
   }
-  // 格式化月、日、时、分、秒
+  /** 格式化月、日、时、分、秒 */
   const o: IDate = {
     'm+': date.getMonth() + 1,
     'd+': date.getDate(),
@@ -20,7 +20,7 @@ export const formatDate = (date: Date, dateFormat: string) => {
   }
   for (const k in o) {
     if (new RegExp(`(${k})`).test(dateFormat)) {
-      // 取出对应的值
+      /** 取出对应的值 */
       const str = o[k] + ''
       /* 根据设置的格式，输出对应的字符
        * 例如: 早上8时，hh => 08，h => 8
@@ -33,7 +33,7 @@ export const formatDate = (date: Date, dateFormat: string) => {
   return dateFormat
 }
 
-// 日期时间补零
+/** 日期时间补零 */
 export const padLeftZero = (str: string | any[]) => {
   return ('00' + str).substr(str.length)
 }
