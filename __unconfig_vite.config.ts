@@ -1,22 +1,29 @@
 let __unconfig_data
-const __unconfig_stub = function (data) {
+const __unconfig_stub = function (data = {}) {
   __unconfig_data = data
 }
-__unconfig_stub.default = (data) => {
+__unconfig_stub.default = (data = {}) => {
   __unconfig_data = data
 }
 import * as path from 'path'
 import dts from 'vite-plugin-dts'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import libCss from 'vite-plugin-libcss'
+import libFile from 'vite-plugin-libfile'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { terser } from 'rollup-plugin-terser'
 
 // https://vitejs.dev/config/
 const __unconfig_default = defineConfig({
   base: './',
-  plugins: [vue(), vueJsx(), dts(), libCss()],
+  plugins: [
+    vue(),
+    vueJsx(),
+    dts(),
+    libFile({
+      paths: ['style.css']
+    })
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
