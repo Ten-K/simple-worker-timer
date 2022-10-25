@@ -1,5 +1,5 @@
 import Flippers from './filpper'
-import MyWork from '../worker?worker'
+import MyWork from '../worker?worker&inline'
 import { formatDate } from '../utils/index'
 import { HTMLElementPlus } from '../types/index'
 import { ref, unref, nextTick, onUnmounted, defineComponent } from 'vue'
