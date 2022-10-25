@@ -9,7 +9,7 @@ module.exports = {
   rules: {
     'type-case': [0],
     'type-empty': [2, 'never'],
-    'type-enum': [2, 'always', ['📦build', '👷ci', '📝docs', '🌟feat', '🐛fix', '🚀perf', '🌠refactor', '🔂revert', '💎style', '🚨test', '⚓chore']],
+    'type-enum': [2, 'always', ['📦build', '👷ci', '📝docs', '🌟feat', '🐛fix', '🚀perf', '🌠refactor', '🔂revert', '💎style', '🚨test', '⚓chore', '🚗release']],
     'scope-empty': [2, 'never'],
     'subject-empty': [2, 'never']
   },
@@ -81,6 +81,11 @@ module.exports = {
           '⚓chore': {
             description: '依赖更新',
             title: 'Chore',
+            emoji: '⚓'
+          },
+          '🚗release': {
+            description: '版本更新',
+            title: 'Release',
             emoji: '⚓'
           }
         }
