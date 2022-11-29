@@ -3,8 +3,8 @@ import dts from 'vite-plugin-dts'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import libFile from 'vite-plugin-libfile'
+import terser from '@rollup/plugin-terser'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import { terser } from 'rollup-plugin-terser'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -35,7 +35,7 @@ export default defineConfig({
         },
         exports: 'named'
       },
-      plugins: [terser({ compress: { drop_console: true } })]
+      plugins: [terser()]
     }
   }
 })
