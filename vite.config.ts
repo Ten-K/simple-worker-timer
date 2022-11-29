@@ -12,7 +12,9 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    dts(),
+    dts({
+      include: 'src/*.ts'
+    }),
     libFile({
       paths: ['style.css']
     })
