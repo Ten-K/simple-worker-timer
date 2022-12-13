@@ -9,6 +9,11 @@
   npm i simple-worker-timer
 ```
 
+```bash
+ # 通过 Yarn 安装
+  yarn add simple-worker-timer
+```
+
 ## 🕸️ CDN
 
 `simple-worker-timer`也提供了 UMD 版本，可以直接通过 CDN 加载，然后直接使用：
