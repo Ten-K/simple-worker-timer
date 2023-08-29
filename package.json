@@ -1,6 +1,6 @@
 {
   "name": "simple-worker-timer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "sideEffects": false,
   "description": "一个基于web worker的翻牌计时器",
   "keywords": [
